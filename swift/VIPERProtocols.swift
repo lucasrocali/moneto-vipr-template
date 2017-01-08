@@ -19,7 +19,6 @@ protocol VIPERViewProtocol: class {
 protocol VIPERWireframeProtocol: class {
 
     func pushVIPERModule(fnview: AnyObject)
-    func presentErrorAlert(title: String, message: String)
 
     //var somePopupWireframe : SomePopupWireframe? { get set }
 

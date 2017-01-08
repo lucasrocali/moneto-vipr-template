@@ -7,10 +7,18 @@ import Foundation
 
 class VIPERPresenter: VIPERPresenterProtocol, VIPERInteractorOutputProtocol {
     
-    weak var view: VIPERViewProtocol?
+    weak var view: VIPERViewProtocol? {
+        didSet {
+            if let view = view {
+                view.setNavInfo(title: "", leftBtnText: "",rightBtnText: "")
+
+            }
+        }
+    }
+
     var interactor: VIPERInteractorInputProtocol?
     var wireframe: VIPERWireframeProtocol?
-    //var someRootWireframe : SomeRootWireframe? { get set }
+    //var someRootWireframe : SomeRootWireframe? 
 
     init() {}
 

@@ -8,7 +8,7 @@ import UIKit
 
 class VIPERViewController: UIViewController, VIPERViewProtocol {
 
-    var presenter: VIPERPresenterProtocol!
+    var presenter: VIPERPresenterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +16,16 @@ class VIPERViewController: UIViewController, VIPERViewProtocol {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+    func setNavInfo(title: String?, leftBtnText: String?, rightBtnText: String?) {
+        
+    }
+
+    func leftBtnClicked(_ sender:UIBarButtonItem) {
+
+    }
+    func rightBtnClicked(_ sender:UIBarButtonItem) {
+
     }
 }
